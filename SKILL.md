@@ -72,12 +72,12 @@ Emit a **single self-contained HTML file** at the path the user specifies (or `~
 These are non-negotiable structural defaults for the HTML output. They define how slides look as a scrollable document — independent of brand colors or content.
 
 - [ ] **Page background**: `#EDEDED`. Slides sit on top as cards. Never white or the brand's primary color.
-- [ ] **Slide container width**: Max `900px`, centered (`margin: 0 auto`). Left/right padding `32px` on the page body so slides never touch viewport edges.
+- [ ] **Slide container width**: Max `1100px`, centered (`margin: 0 auto`). Left/right padding `32px` on the page body so slides never touch viewport edges.
 - [ ] **Slide layout**: Vertical scroll, one slide per section, stacked top-to-bottom. No horizontal carousels or JS-powered transitions unless explicitly requested.
 - [ ] **Slide aspect ratio**: `16:9` enforced via `aspect-ratio: 16/9` on the slide element. Never let content stretch the height arbitrarily.
 - [ ] **Slide card border radius**: `16px`. Applied to the outer slide container.
 - [ ] **Slide card shadow**: `box-shadow: 0 2px 16px rgba(0,0,0,0.09)`. One shadow level — no layered or colored shadows.
-- [ ] **Slide gap**: `48px` vertical gap between slide cards.
+- [ ] **Slide gap**: `32px` vertical gap between slide cards.
 - [ ] **Slide label**: Above each slide card, outside the slide boundary. Format: `Slide N — Section Name` (title case). Style: `11px`, `letter-spacing: 0.1em`, `color: #999`, `font-weight: 500`, `margin-bottom: 10px`. Left-aligned with the slide edge.
 - [ ] **Pagination**: Inside the slide, bottom-right, `NN / TT` format (zero-padded). Style: `13px`, muted color (e.g. `#999` on light slides), inside the 5% safe-zone. Never bold, never accented.
 - [ ] **Logo placement**: Inside the slide, bottom-left, same vertical baseline as pagination. Wordmark only (~20–24px tall). Inside the 5% safe-zone. Governed by Rule #21.
@@ -138,7 +138,7 @@ These are non-negotiable structural defaults for the HTML output. They define ho
 - Don't mix presenter and document mode (Rule #20)
 - Don't omit the brand logo unless the user explicitly said no (Rule #21 — default ON)
 - Don't use a white or brand-colored page background — slides must sit on `#EDEDED`
-- Don't make slides full-bleed or full-viewport — max `900px` centered, `aspect-ratio: 16/9`
+- Don't make slides full-bleed or full-viewport — max `1100px` centered, `aspect-ratio: 16/9`
 - Don't skip the slide label above each card — format is `Slide N — Section Name`, outside the slide
 - Don't skip pagination — bottom-right inside every slide, `NN / TT` format
 - Don't use square slide corners — border radius is always `16px`
